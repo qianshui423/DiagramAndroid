@@ -9,6 +9,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.diagram.diagramandroid.handler.SyncBarrierTestActivity;
+import com.diagram.diagramandroid.sbeauty.ReceiveResultActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initListener() {
         findViewById(R.id.btn_syncBarrier).setOnClickListener(this);
+        findViewById(R.id.btn_activity_result).setOnClickListener(this);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
         if (id == R.id.btn_syncBarrier) {
             startActivity(new Intent(this, SyncBarrierTestActivity.class));
+        } else if (id == R.id.btn_activity_result) {
+            startActivity(new Intent(this, ReceiveResultActivity.class));
         }
     }
 }

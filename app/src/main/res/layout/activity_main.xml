@@ -11,4 +11,9 @@
         style="@style/Diagram_TestButton"
         android:text="同步屏障" />
 
+    <Button
+        android:id="@+id/btn_activity_result"
+        style="@style/Diagram_TestButton"
+        android:text="Activity结果获取工具类测试" />
+
 </LinearLayout>
